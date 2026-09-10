@@ -1,5 +1,6 @@
 # umrt-pay
 
-Customer pay hub → Square Payment Link `https://square.link/u/gwpaG44c`.
-
 Live: https://umrt-pay.pages.dev/
+
+Square first hour + trip $225: `https://square.link/u/STB7z2B6`
+Cash App: `$UMRTNY`
