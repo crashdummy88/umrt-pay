@@ -1,8 +1,7 @@
 # umrt-pay
 
-Primary Square Payment Link (first hour + trip $225): `https://square.link/u/STB7z2B6`
-Cash App: `$UMRTNY` → https://cash.app/$UMRTNY
+Square only (Cash App removed per Matt 2026-09-10).
 
-Previous deposit link (retired on this tip): `https://square.link/u/gwpaG44c`
+Primary: `https://square.link/u/STB7z2B6` — first hour + trip $225
 
 No Square API secrets required for this path.
