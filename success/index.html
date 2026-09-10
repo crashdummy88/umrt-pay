@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Paid · United Mobile RV</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment received · United Mobile RV</title>
+  <meta name="robots" content="noindex,follow">
   <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
   <div class="wrap">
-    <header><a class="brand" href="/">United Mobile <span>RV</span></a></header>
+    <header>
+      <a class="brand" href="/"><img src="/assets/brand/umrt-logo.webp" width="140" height="42" alt="United Mobile RV" decoding="async"></a>
+    </header>
     <main>
-      <h1>Payment received</h1>
-      <p class="lede msg ok">Thank you. A Square receipt will follow if email was provided.</p>
-      <p id="pid" class="note"></p>
-      <p><a class="btn" href="https://unitedmobilerv.com/book-service/">Book Next Service</a>
-      <a class="btn btn-ghost" href="sms:+16166065277">Prefer Text</a></p>
+      <h1>Thank you</h1>
+      <p class="lede">If Square confirmed your payment, we’re good — Prefer Text with your name and rig so we can match the deposit.</p>
+      <div class="cta">
+        <a class="btn" href="sms:+16166065277">Text (616) 606-5277</a>
+        <a class="btn btn-ghost" href="/">Back to pay</a>
+      </div>
     </main>
-    <footer>United Mobile RV LLC</footer>
   </div>
-  <script>const p=new URLSearchParams(location.search).get('id'); if(p) document.getElementById('pid').textContent='Reference: '+p;</script>
 </body>
 </html>
