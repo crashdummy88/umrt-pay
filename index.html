@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pay · United Mobile RV</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1A1A1A">
+  <title>Pay service deposit · United Mobile RV</title>
+  <meta name="description" content="Pay your United Mobile RV service deposit securely through Square. Prefer Text (616) 606-5277.">
   <meta name="robots" content="noindex,follow">
-  <meta name="description" content="Secure payment for United Mobile RV LLC — Square Web Payments.">
+  <link rel="icon" href="/assets/brand/favicon-64.png">
   <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
   <div class="wrap">
     <header>
-    <a class="brand" href="/"><img src="/assets/brand/umrt-logo.webp" width="140" height="42" alt="United Mobile RV"  fetchpriority="high" decoding="async"/></a>
-      <a class="brand" href="/">United Mobile <span>RV</span></a>
-      <nav><a href="/pay/" aria-current="page">Pay</a><a href="https://united-mobile-rv.pages.dev/">Main site</a></nav>
+      <a class="brand" href="/"><img src="/assets/brand/umrt-logo.webp" width="140" height="42" alt="United Mobile RV" fetchpriority="high" decoding="async"></a>
+      <nav aria-label="Primary">
+        <a href="/" aria-current="page">Pay</a>
+        <a href="https://unitedmobilerv.com/book-service/">Book</a>
+        <a href="https://united-mobile-rv.pages.dev/">Site</a>
+      </nav>
     </header>
     <main>
-      <p class="badge">Soft · Square-secured</p>
-      <h1>Customer payments</h1>
-      <p class="lede">Pay an invoice or deposit. Card data is tokenized by Square in your browser — our server never sees your full card number.</p>
-      <div class="card">
-        <p><strong>How it works</strong></p>
-        <ol>
-          <li>Enter amount + your info on the pay form</li>
-          <li>Square Web Payments SDK tokenizes the card</li>
-          <li>A Cloudflare Pages Function charges Square with a server-only access token</li>
-        </ol>
+      <h1>Pay your service deposit</h1>
+      <p class="lede">Secure checkout on Square. Use this for the service deposit after we confirm your job — or any invoice Matt texts you.</p>
+      <div class="cta">
+        <a class="btn" href="https://square.link/u/gwpaG44c" rel="noopener">Pay service deposit</a>
+        <a class="btn btn-ghost" href="sms:+16166065277">Prefer Text (616) 606-5277</a>
       </div>
-      <p><a class="btn" href="/pay/">Pay now</a></p>
-      <p class="note">Separate from WordPress. Ecosystem: GitHub → Cloudflare Pages. Prefer Text (616) 606-5277 if you need a custom invoice.</p>
+      <div class="card">
+        <p><strong>Before you pay</strong></p>
+        <ul>
+          <li>Text first with city/ZIP, rig type, and what’s failing</li>
+          <li>We’ll confirm scope and the deposit amount</li>
+          <li>Card details stay on Square’s hosted checkout</li>
+        </ul>
+      </div>
+      <p class="note">Already booked? <a href="https://unitedmobilerv.com/book-service/">Book / deposit on the live site</a> uses the same Square link.</p>
     </main>
-    <footer>United Mobile RV LLC · Payments via Square · Public beta soft</footer>
+    <footer>
+      <p>United Mobile RV LLC · Prefer Text <a href="sms:+16166065277">(616) 606-5277</a></p>
+      <p class="fine">Payments processed by Square · Mobile RV service · MT · WY · ID · WA corridor</p>
+    </footer>
   </div>
 </body>
 </html>
