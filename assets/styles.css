@@ -18,12 +18,6 @@ h1{font-size:clamp(1.55rem,4vw,1.9rem);margin:0 0 .5rem;letter-spacing:-.02em;li
 .btn{display:inline-block;border:0;cursor:pointer;padding:.8rem 1.15rem;border-radius:10px;font-weight:700;font:inherit;background:var(--gold);color:var(--black);text-decoration:none}
 .btn:hover{filter:brightness(1.05)}
 .btn-ghost{background:transparent;border:1px solid #ddd;color:var(--black)}
-.pay-grid{display:grid;gap:1rem;margin:1.25rem 0}
-@media(min-width:520px){.pay-grid{grid-template-columns:1fr 1fr}}
-.pay-opt{background:var(--lg);border-radius:14px;padding:1.1rem;text-align:center}
-.pay-opt h2{font-size:1.05rem;margin:0 0 .5rem}
-.pay-opt p{margin:0 0 .85rem;font-size:.9rem;color:var(--dg)}
-.qr{width:min(180px,70vw);height:auto;margin:.25rem auto .85rem;display:block;border-radius:8px;background:#fff;padding:.35rem}
 .note{font-size:.88rem;color:var(--dg);margin:1rem 0 0}
 footer{margin-top:2.25rem;padding-top:1rem;border-top:1px solid #eee;font-size:.85rem;color:var(--dg)}
 .fine{font-size:.82rem;color:var(--dg)}
