@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paid · United Mobile RV</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header><a class="brand" href="/">United Mobile <span>RV</span></a></header>
+    <main>
+      <h1>Payment received</h1>
+      <p class="lede msg ok">Thank you. A Square receipt will follow if email was provided.</p>
+      <p id="pid" class="note"></p>
+      <p><a class="btn" href="https://unitedmobilerv.com/book-service/">Book Next Service</a>
+      <a class="btn btn-ghost" href="sms:+16166065277">Prefer Text</a></p>
+    </main>
+    <footer>United Mobile RV LLC</footer>
+  </div>
+  <script>const p=new URLSearchParams(location.search).get('id'); if(p) document.getElementById('pid').textContent='Reference: '+p;</script>
+</body>
+</html>

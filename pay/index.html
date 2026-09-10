@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout · United Mobile RV</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <!-- Square Web Payments SDK: sandbox until SQUARE_ENVIRONMENT=production -->
+  <script src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/">United Mobile <span>RV</span></a>
+      <nav><a href="/pay/" aria-current="page">Pay</a></nav>
+    </header>
+    <main>
+      <h1>Secure checkout</h1>
+      <p class="lede">Sandbox mode until production keys are set in Cloudflare Pages env.</p>
+      <form id="payment-form" class="card" novalidate>
+        <label for="amount">Amount (USD)</label>
+        <input id="amount" name="amount" type="number" min="1" step="0.01" placeholder="150.00" required>
+        <label for="note">What is this for?</label>
+        <input id="note" name="note" type="text" maxlength="120" placeholder="Diagnostic deposit / invoice #">
+        <label for="email">Email (receipt)</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@email.com">
+        <label>Card</label>
+        <div id="card-container"></div>
+        <button id="pay-button" class="btn" type="submit">Pay securely</button>
+        <p id="payment-status" class="msg" role="status" aria-live="polite"></p>
+        <p class="note">Secrets never ship in this HTML. <code>SQUARE_ACCESS_TOKEN</code> lives only in Cloudflare Pages environment variables.</p>
+      </form>
+    </main>
+    <footer>United Mobile RV LLC · Square Web Payments</footer>
+  </div>
+  <script src="/assets/pay.js" type="module"></script>
+</body>
+</html>
